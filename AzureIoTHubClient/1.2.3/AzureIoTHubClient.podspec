@@ -6,8 +6,6 @@ Pod::Spec.new do |spec|
     spec.authors       = { 'Microsoft' => '' }
     spec.summary       = 'Azure IoT Hub Client library for CocoaPods.'
     spec.source        = { :git => "https://github.com/Azure/azure-iot-sdk-c.git", :tag => '1.2.3' }
-    spec.module_name   = 'Rich'
-    spec.swift_version = '4.0'
     spec.description = 'This is a CocoaPods release of the Azure C IoT Hub Client.'
 
     spec.ios.deployment_target  = '8.0'
@@ -23,7 +21,7 @@ Pod::Spec.new do |spec|
         "iothub_client/src/*.c",
         "serializer/src/*.c"
     ]
-    spec.public_header = "inc/*.h"
+    spec.public_header_files = "inc/*.h"
     spec.header_mappings_dir = "inc/"
     spec.user_target_xcconfig = {
         "USE_HEADERMAP": "NO",
