@@ -12,8 +12,8 @@
     "Microsoft": ""
   },
   "source": {
-    "git": "https://github.com/Azure/azure-c-shared-utility.git",
-    "branch": "jbobotek-test-cocoa"
+    "git": "https://github.com/yaroslav-zhurakovskiy/azure-c-shared-utility.git",
+    "branch": "watchos-support"
   },
   "platforms": {
     "ios": "8.0",
@@ -29,6 +29,7 @@
     "pal/tlsio_options.c",
     "pal/agenttime.c",
     "pal/ios-osx/*.c",
+    "pal/ios-osx/*.m",
     "adapters/lock_pthreads.c",
     "adapters/threadapi_pthreads.c",
     "adapters/linux_time.c",
